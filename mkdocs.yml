@@ -1,0 +1,28 @@
+site_name: Mkdocs with flow
+site_author: 52519178@qq.com
+pages:
+  - 'Mkdocs' : mkdocs.md
+  
+
+theme: "readthedocs"
+markdown_extensions:
+# pip install pymdown-extension 用于支持 sequence/flow 图
+    - pymdownx.superfences
+extra_javascript:
+    - assets/flow/raphael.min.js
+    - assets/flow/loader/uml-converter.js
+    # 时序图
+    - assets/flow/underscore-min.js
+    - assets/flow/sequence-diagram-min.js
+    - assets/flow/loader/loader-sequence.js
+    # 流程图
+    - assets/flow/flowchart-latest.js
+    - assets/flow/loader/loader-flow.js
+    # div.mermaid
+    - assets/flow/loader/loader-mermaid.js
+    - assets/flow/mermaid.min.js
+extra_css:
+    - assets/flow/mermaid.forest.min.css   
+    - assets/css/my-theme.css 
+    
+    
